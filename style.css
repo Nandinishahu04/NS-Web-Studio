@@ -2524,3 +2524,70 @@ PROJECT BENEFITS
     }
 
 }
+/* ================= MOBILE MENU ================= */
+
+.menu-toggle {
+    display: none;
+}
+
+@media (max-width: 768px) {
+
+    .navbar {
+        position: relative;
+        padding: 12px 20px;
+    }
+
+    .menu-toggle {
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #ffffff !important;
+        font-size: 32px;
+        font-weight: bold;
+        cursor: pointer;
+        z-index: 99999;
+        width: 45px;
+        height: 45px;
+    }
+
+    .nav-links {
+        display: none !important;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #0b1f3a;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 0;
+        margin: 0;
+        z-index: 99998;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    }
+
+    .nav-links.active {
+        display: flex !important;
+    }
+
+    .nav-links li {
+        list-style: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links li a {
+        display: block;
+        width: 100%;
+        padding: 15px 0;
+        color: #ffffff !important;
+        text-decoration: none;
+    }
+
+    .navbar > .btn {
+        display: none;
+    }
+}
