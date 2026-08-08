@@ -2591,3 +2591,87 @@ PROJECT BENEFITS
         display: none;
     }
 }
+/* ================= MOBILE VISIBILITY FIX ================= */
+
+@media (max-width: 768px) {
+
+    /* HAMBURGER MENU */
+    .menu-toggle {
+        display: flex !important;
+        color: #ffffff !important;
+        background: transparent !important;
+        font-size: 30px !important;
+        font-weight: bold;
+        cursor: pointer;
+        z-index: 99999;
+        visibility: visible !important;
+        opacity: 1 !important;
+    }
+
+    /* MOBILE MENU */
+    .nav-links {
+        background: #0b1f3a !important;
+    }
+
+    .nav-links a {
+        color: #ffffff !important;
+    }
+
+    /* HERO BUTTONS */
+    .hero-buttons {
+        display: flex !important;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        width: 100%;
+    }
+
+    .hero-buttons .btn,
+    .hero-buttons .btn-outline {
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        visibility: visible !important;
+        opacity: 1 !important;
+        width: 90%;
+        max-width: 300px;
+        min-height: 50px;
+        padding: 14px 20px;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 700;
+        border-radius: 8px;
+    }
+
+    /* VIEW PROJECTS */
+    .hero-buttons .btn {
+        background: #ffb000 !important;
+        color: #071d38 !important;
+    }
+
+    /* SECONDARY BUTTON */
+    .hero-buttons .btn-outline {
+        background: transparent !important;
+        color: #ffffff !important;
+        border: 2px solid #ffb000 !important;
+    }
+
+    /* DOWNLOAD RESUME */
+    .hero-buttons a[href*="Resume"] {
+        display: flex !important;
+        background: #ffb000 !important;
+        color: #071d38 !important;
+        border: 2px solid #ffb000 !important;
+    }
+
+    .hero-buttons a i {
+        color: inherit !important;
+    }
+
+    /* PROJECT CARD BUTTON */
+    .project-card .btn,
+    .project-card a {
+        visibility: visible !important;
+        opacity: 1 !important;
+    }
+}
